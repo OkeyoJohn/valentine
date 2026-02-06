@@ -1,0 +1,17 @@
+On the landing page, on the top bar click 'More'. From the dropdown, scroll down and click 'Email-Template...'. On the Email-Templates page, on the top right side, click the 'Filter' button. On the filter page, under 'Basic Filter', type "Joomla Account Creation" in the 'Name' field and click the 'Search' button to run the filter successfully. Verify that the name is in the result table result. Format the output as JSON schema:
+{"type": "boolean"}
+
+
+
+
+
+
+
+
+
+
+
+output
+
+Joomla Account Creation=present
+210483
