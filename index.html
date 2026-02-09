@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <title>Will You Be My Valentine?</title>
 
-<link rel="icon" type="image/png" href="b75fb36c-4dc9-46b3-ac16-bad0253fdc6a.jpg">
-
-  
-
+  <!-- Tab icon -->
+  <link rel="icon" type="image/png" href="b75fb36c-4dc9-46b3-ac16-bad0253fdc6a.jpg">
 
   <style>
     body {
@@ -16,16 +14,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Background video */
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    #background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .container {
       text-align: center;
-      background: white;
+      background: rgba(255, 255, 255, 0.9);
       padding: 40px;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      z-index: 1;
     }
 
     h1 {
@@ -36,7 +52,6 @@
     .buttons {
       position: relative;
       height: 100px;
-     
     }
 
     button {
@@ -70,17 +85,25 @@
 </head>
 <body>
 
+ 
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="background-video">
+      <source src="Hearts_animation_2.mov" type="video/mp4">
+  
+    </video>
+  </div>
+
   <div class="container">
     <h1>Will you be my Valentine Pauline ? 💘</h1>
 
     <div class="buttons">
       <button id="yesBtn">Yes ❤️</button>
-      <button id="noBtn"> No 😢</button>
+      <button id="noBtn">No 😢</button>
     </div>
 
     <p id="message">
-      Thank you for being my Valentine 💖    
-      I’m really grateful to have you in my life 😘
+      Thank you for being my Valentine 💖 <br>
+      I’m really grateful to have you in my life 😘 <br>
       Love you so much baby 💖💖💖💖💖
     </p>
   </div>
@@ -112,3 +135,4 @@
 
 </body>
 </html>
+
